@@ -45,7 +45,7 @@ body {
   background-size: fill;
   background-position: center;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   }
+}
 
 div {
   margin-top: 80px;
@@ -63,7 +63,7 @@ div {
 .about-me, .projects, .contact {
   margin: 20px;
   padding: 50px;
-  height: 300px;
+  height: auto;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: none;
   border: solid #56e5d8;
@@ -73,6 +73,7 @@ div {
 .about-me img, .projects img, .contact img {
   max-height: 200px;
   border-radius: 10px;
+  padding: 15px;
 }
 
 
@@ -85,8 +86,14 @@ div {
   float: left;
 }
 
-.float-right {
-  float: right;
+.projects li, .contact li{
+  list-style: square;
+}
+
+.projects a, .contact a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #ff1b1c;
 }
 
 footer {
@@ -99,6 +106,7 @@ footer {
 footer h3 {
   text-align: center;
   color: #908f8f;
+  font-size: 20px;
 }
 
 @media screen and (max-width: 565px) {
